@@ -1,0 +1,62 @@
+{
+  "agents": {
+    "engineering": {
+      "rust-performance-optimizer": {
+        "name": "Rust Performance Optimizer",
+        "description": "Optimizes Rust code for maximum performance while maintaining correctness",
+        "tags": ["rust", "performance", "optimization", "benchmarking"],
+        "expertise": ["SIMD", "memory optimization", "algorithmic improvements", "profiling"]
+      },
+      "backend-architect": {
+        "name": "Backend Architect", 
+        "description": "Designs scalable backend systems and APIs",
+        "tags": ["architecture", "apis", "scalability", "system design"],
+        "expertise": ["microservices", "database design", "API design", "performance"]
+      },
+      "test-writer-fixer": {
+        "name": "Test Writer & Fixer",
+        "description": "Creates and fixes tests, ensures code quality", 
+        "tags": ["testing", "quality", "debugging", "validation"],
+        "expertise": ["unit tests", "integration tests", "test automation", "debugging"]
+      },
+      "devops-automator": {
+        "name": "DevOps Automator",
+        "description": "Handles CI/CD, deployment, and infrastructure",
+        "tags": ["devops", "ci/cd", "deployment", "infrastructure"],
+        "expertise": ["Docker", "AWS Lambda", "automation", "monitoring"]
+      }
+    },
+    "testing": {
+      "api-tester": {
+        "name": "API Tester",
+        "description": "API testing and validation",
+        "tags": ["api", "testing", "validation", "contracts"],
+        "expertise": ["REST APIs", "GraphQL", "API contracts", "load testing"]
+      },
+      "performance-benchmarker": {
+        "name": "Performance Benchmarker", 
+        "description": "Performance testing and analysis",
+        "tags": ["performance", "benchmarking", "profiling", "optimization"],
+        "expertise": ["Criterion", "flamegraph", "performance analysis", "bottleneck identification"]
+      }
+    },
+    "workflows": {
+      "performance_optimization": [
+        "rust-performance-optimizer",
+        "performance-benchmarker", 
+        "test-results-analyzer"
+      ],
+      "bug_investigation": [
+        "test-writer-fixer",
+        "backend-architect",
+        "devops-automator"
+      ],
+      "feature_development": [
+        "backend-architect",
+        "rapid-prototyper",
+        "api-tester",
+        "project-shipper"
+      ]
+    }
+  }
+}
